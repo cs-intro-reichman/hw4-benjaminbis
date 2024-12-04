@@ -92,6 +92,9 @@ public class ArrCharOps {
     }
 
     public static int compareTo(String str1, String str2) {
+        if (str1 == null || str2 == null) {
+            throw new IllegalArgumentException("Strings cannot be null");
+        }
         int len1 = str1.length();
         int len2 = str2.length();
         int minLength = Math.min(len1, len2);
@@ -103,7 +106,6 @@ public class ArrCharOps {
                 return ch1 - ch2;
             }
         }
-
         return len1 - len2;
     }
 }
