@@ -3,7 +3,7 @@ public class Primes {
         
         int n = Integer.parseInt(args[0]);
         if (n < 2) {
-            System.out.println("n doit être >= 2");
+            System.out.println("n must >= 2");
             return;
         }
 
